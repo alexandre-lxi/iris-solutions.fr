@@ -1,0 +1,151 @@
+<html>
+<head><title>Image map created by yEd</title>
+<style type="text/css">
+.tooltip {
+  font-size:10pt;
+  background-color:#FFFFCC;
+  border:1px solid black;
+  padding:2px
+}
+</style>
+<style type="text/css">
+.tooltip {
+  position:absolute;
+  display:none
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+tooltip = null;
+document.onmousemove = updateTooltip;
+function updateTooltip(e) {
+try {
+if (document.all) {
+if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+x = document.documentElement.scrollLeft + window.event.x;
+y = document.documentElement.scrollTop + window.event.y;
+}
+else { // all other Explorers
+x = document.body.scrollLeft + window.event.x;
+y = document.body.scrollTop + window.event.y;
+}
+}
+else {
+x = e.pageX;
+y = e.pageY;
+}
+if (tooltip != null) {
+o = 20;
+var sx, sy;
+if (self.pageYOffset) { // all except Explorer
+sx = self.pageXOffset;
+sy = self.pageYOffset;
+}
+else if (document.documentElement && document.documentElement.scrollTop) { // Explorer 6 Strict
+sx = document.documentElement.scrollLeft;
+sy = document.documentElement.scrollTop;
+}
+else if (document.body) { // all other Explorers
+sx = document.body.scrollLeft;
+sy = document.body.scrollTop;
+}
+t = y + o + tooltip.offsetHeight;
+w = sy + document.body.clientHeight;
+if (t > w) {
+y = y - o - tooltip.offsetHeight;
+}
+else {
+y = y + o;
+}
+t = x + o + tooltip.offsetWidth;
+w = sx + document.body.clientWidth;
+if (t > w) {
+x = x - o - tooltip.offsetWidth;
+}
+else {
+x = x + o;
+}
+if ((tooltip.style.top == '' || tooltip.style.top == 0) && (tooltip.style.left == '' || tooltip.style.left == 0))
+{
+tooltip.style.width = tooltip.offsetWidth + 'px';
+tooltip.style.height = tooltip.offsetHeight + 'px';
+}
+tooltip.style.left = x + "px";
+tooltip.style.top = y + "px";
+}
+} catch (error) { error = null; }
+}
+function showTooltip(id) {
+try {
+tooltip = document.getElementById(id);
+tooltip.style.display = "block";
+} catch (error) { error = null; }
+}
+function hideTooltip() {
+try {
+tooltip.style.display = "none";
+} catch (error) { error = null; }
+}
+</script>
+
+<div class="tooltip" id="n0">3</div>
+<div class="tooltip" id="n5">Cloudwatch</div>
+<div class="tooltip" id="n6">Route 53</div>
+<div class="tooltip" id="n7">AWS S3 / Static Element</div>
+<div class="tooltip" id="n8">AWS Cloudfront</div>
+<div class="tooltip" id="n9">Elastic Load Balancing</div>
+<div class="tooltip" id="n10">DynamoDB</div>
+<div class="tooltip" id="n11">IAM</div>
+<div class="tooltip" id="n12">Lambda</div>
+<div class="tooltip" id="n13">Serveurs Web</div>
+<div class="tooltip" id="n14">API Gateway</div>
+<div class="tooltip" id="n15">AWS S3 / Medias</div>
+<div class="tooltip" id="n16">EC2 instances</div>
+<div class="tooltip" id="n17">EC2 instances</div>
+<div class="tooltip" id="n18">Lambda & S3 - Details</div>
+<div class="tooltip" id="n19">S3 ORI</div>
+<div class="tooltip" id="n20">File</div>
+<div class="tooltip" id="n21">S3</div>
+<div class="tooltip" id="n22">Lambda</div>
+<div class="tooltip" id="n24">S3 Files</div>
+<div class="tooltip" id="n25">File</div>
+<div class="tooltip" id="n26">File</div>
+<div class="tooltip" id="n27">File</div>
+
+<map name="image1_1">
+  <area shape="rect" coords="2177,646,2192,668" alt="" onmouseover="showTooltip('n27')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2177,670,2198,692" alt="" onmouseover="showTooltip('n26')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2177,698,2207,728" alt="" onmouseover="showTooltip('n25')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2114,655,2169,711" alt="" onmouseover="showTooltip('n24')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="2233,484,2292,556" alt="" onmouseover="showTooltip('n22')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1982,484,2042,556" alt="" onmouseover="showTooltip('n21')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1934,614,1964,644" alt="" onmouseover="showTooltip('n20')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1984,655,2039,711" alt="" onmouseover="showTooltip('n19')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1877,426,2406,826" alt="" onmouseover="showTooltip('n18')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="923,15,987,87" alt="" onmouseover="showTooltip('n5')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1603,426,1663,498" alt="" onmouseover="showTooltip('n15')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1213,590,1272,648" alt="" onmouseover="showTooltip('n14')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="927,401,987,473" alt="" onmouseover="showTooltip('n17')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="927,628,987,700" alt="" onmouseover="showTooltip('n16')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="828,328,1093,782" alt="" onmouseover="showTooltip('n13')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1397,590,1469,662" alt="" onmouseover="showTooltip('n12')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1414,910,1452,982" alt="" onmouseover="showTooltip('n11')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="1213,435,1277,507" alt="" onmouseover="showTooltip('n10')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="698,526,754,584" alt="" onmouseover="showTooltip('n9')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="503,519,562,591" alt="" onmouseover="showTooltip('n8')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="601,232,660,304" alt="" onmouseover="showTooltip('n7')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="337,232,397,304" alt="" onmouseover="showTooltip('n6')" onmouseout="hideTooltip()"/>
+  <area shape="rect" coords="289,177,1768,1019" alt="" onmouseover="showTooltip('n0')" onmouseout="hideTooltip()"/>
+</map>
+
+
+    <table class="yimagetable" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td><img class="yimage" src="unnamed41_1.png" usemap="#image1_1" border="0" alt=""/></td>
+      </tr>
+    </table>
+
+</body>
+</html>
